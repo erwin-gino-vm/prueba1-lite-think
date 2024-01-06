@@ -15,8 +15,9 @@ public class ClienteModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 2)
+    @Column(length = 2,nullable = false)
     private String tipoDocumento;
+    @Column(nullable = false)
     private String cedulaCiudadania;
 
     private String primerNombre;
