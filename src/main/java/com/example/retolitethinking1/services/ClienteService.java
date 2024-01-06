@@ -28,8 +28,8 @@ public class ClienteService {
 
     public ClienteModel save(ClienteModel clienteModel) throws Exception{
         if(
-                !clienteModel.getTipoDocumento().equals('P')  &&
-                !clienteModel.getTipoDocumento().equals('C')
+                !clienteModel.getTipoDocumento().equals("P")  &&
+                !clienteModel.getTipoDocumento().equals("C")
         ) {
             throw new Exception("El documento no es valido");
         }
