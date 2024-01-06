@@ -27,4 +27,5 @@ public class ClienteModel {
     @Column(length = 12)
     private String telefono;
     private String direccion;
+    private String ciudad;
 }
